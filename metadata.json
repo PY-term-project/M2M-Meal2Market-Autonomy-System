@@ -1,0 +1,7 @@
+{
+  "name": "M2M system",
+  "description": "A multi-agent architecture that coordinates planning, verification, and robotic execution for automated meal-to-market services.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
