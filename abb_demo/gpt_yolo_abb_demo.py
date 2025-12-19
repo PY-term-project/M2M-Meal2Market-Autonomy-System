@@ -91,7 +91,7 @@ try:
     ser.write(serial.to_bytes([0x48, 0x49, 0x74, 0x01, 0x01, 0xA0, 0x01, 0x55, 0Xc6]))
 
 except:
-    print("❌ 串列埠連線失敗")
+    print("串列埠連線失敗")
     ser = None
 
 
@@ -110,7 +110,7 @@ def display_and_pick(frame, result, intr, depth_frame):
     scores = result['scores']
 
     if len(boxes) == 0:
-        print("⚠️ 沒有偵測到目標")
+        print(" 沒有偵測到目標")
         cv2.imshow("YOLO + RealSense", frame)
         cv2.waitKey(1)
         return
@@ -254,4 +254,5 @@ if __name__ == "__main__":
     print("任務完成")
     pipeline.stop()
     cv2.destroyAllWindows()
+
     if ser: ser.close()
