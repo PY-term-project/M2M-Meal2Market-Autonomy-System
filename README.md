@@ -3,7 +3,7 @@
 <img width="600" height="200" alt="GHBanner" src=https://github.com/PY-term-project/M2M-Meal2Market-Autonomy-System/blob/main/Framework.PNG?raw=true" />
 </div>
 
-# Detail concept
+# Detailed Concept
 <div align="center">
 <img width="560" height="800" alt="GHBanner" src="https://github.com/PY-term-project/M2M-Meal2Market-Autonomy-System/blob/main/M2M%EF%BC%9A%20Meal2Market%20Autonomy%20System.png?raw=true" />
 </div>
