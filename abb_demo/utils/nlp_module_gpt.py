@@ -2,7 +2,7 @@ from openai import OpenAI
 import json, re
 
 client = OpenAI(
-    api_key="sk-A2JUrdIXi1MLVrxM2tjnPfvlFzenVhZQCo94QblDvHKpX5Mq",  # ⚠️ 改成你的 API key
+    api_key="sk-xxxxxxxxxxxxxxxx",  #  API key
     base_url="https://api.chatanywhere.tech/v1"
 )
 
@@ -42,7 +42,7 @@ def parse_intent_gpt(user_text: str):
     )
 
     reply = completion.choices[0].message.content.strip()
-    print("🧠 GPT回覆：", reply)
+    print("GPT回覆：", reply)
 
     # 清除 markdown 標記
     clean_reply = re.sub(r"```(?:json)?", "", reply).strip().strip("`")
@@ -50,7 +50,8 @@ def parse_intent_gpt(user_text: str):
     try:
         parsed = json.loads(clean_reply)
     except Exception as e:
-        print("⚠️ GPT 回覆解析失敗：", e)
+        print("GPT 回覆解析失敗：", e)
         parsed = {"action": "pick", "targets": []}
 
     return parsed
+
